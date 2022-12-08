@@ -1,0 +1,10 @@
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.exe.config
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.AssemblyReference.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.Properties.Resources.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.GenerateResource.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.frmFrutas.resources
