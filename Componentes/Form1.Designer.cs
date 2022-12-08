@@ -46,8 +46,8 @@ namespace Componentes
             this.txtSelecione = new System.Windows.Forms.TextBox();
             this.btnSelcionar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnInserir = new System.Windows.Forms.Button();
             this.gpbFrutas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,8 +123,10 @@ namespace Componentes
             // 
             // txtFrutaSelecionada
             // 
+            this.txtFrutaSelecionada.Enabled = false;
             this.txtFrutaSelecionada.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrutaSelecionada.Location = new System.Drawing.Point(67, 370);
+            this.txtFrutaSelecionada.MaxLength = 50;
             this.txtFrutaSelecionada.Name = "txtFrutaSelecionada";
             this.txtFrutaSelecionada.Size = new System.Drawing.Size(255, 24);
             this.txtFrutaSelecionada.TabIndex = 1;
@@ -182,9 +184,11 @@ namespace Componentes
             // 
             this.txtSelecione.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSelecione.Location = new System.Drawing.Point(67, 75);
+            this.txtSelecione.MaxLength = 50;
             this.txtSelecione.Name = "txtSelecione";
             this.txtSelecione.Size = new System.Drawing.Size(255, 24);
             this.txtSelecione.TabIndex = 0;
+            this.txtSelecione.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSelecione_KeyDown);
             // 
             // btnSelcionar
             // 
@@ -195,6 +199,7 @@ namespace Componentes
             this.btnSelcionar.TabIndex = 2;
             this.btnSelcionar.Text = "&Selecionar";
             this.btnSelcionar.UseVisualStyleBackColor = true;
+            this.btnSelcionar.Click += new System.EventHandler(this.btnSelcionar_Click);
             // 
             // btnLimpar
             // 
@@ -205,34 +210,37 @@ namespace Componentes
             this.btnLimpar.TabIndex = 4;
             this.btnLimpar.Text = "Limpa&r";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // btnVoltar
+            // btnSair
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(506, 440);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(131, 46);
-            this.btnVoltar.TabIndex = 5;
-            this.btnVoltar.Text = "&Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(506, 440);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(131, 46);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "&Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // button1
+            // btnInserir
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(215, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 46);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "&Inserir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserir.Location = new System.Drawing.Point(215, 440);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(131, 46);
+            this.btnInserir.TabIndex = 3;
+            this.btnInserir.Text = "&Inserir";
+            this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // frmFrutas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 526);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnInserir);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSelcionar);
             this.Controls.Add(this.txtSelecione);
@@ -275,8 +283,8 @@ namespace Componentes
         private System.Windows.Forms.TextBox txtSelecione;
         private System.Windows.Forms.Button btnSelcionar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnInserir;
     }
 }
 
